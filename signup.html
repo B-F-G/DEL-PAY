@@ -1,0 +1,241 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Sign Up Page</title>
+<style>
+    #signature {
+    margin-right: 10px !important;
+}
+
+#photo{
+    width: 210px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: radial-gradient(ellipse at bottom, #ffecd2 0%, #fcb69f 25%, #6a82fb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-container {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  padding: 38px 38px 22px 38px;
+  width: 420px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.del{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+
+
+}
+.FL{color: red;}.SL{color:orange;}.TL {color: yellow;}.HY{color: green;}.F0L{color: blue;}.FTHL{color: indigo;}.SXL{color: VIOLET;}
+.signup-form {
+  width: 100%;
+}
+
+
+.signup-form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #e0e0e0;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"],
+.form-group input[type="file"] {
+  padding: 9px;
+  border-radius: 4px;
+  border: none;
+  background: #f1f1f1;
+  font-size: 15px;
+  color: #232526;
+  margin-bottom: 3px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.form-group input[type="file"] {
+  padding: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: #6a82fb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.signup-btn:hover {
+  background: #232526;
+}
+
+.signin-link {
+  text-align: center;
+  margin-top: 18px;
+  color: #b3b3b3;
+  font-size: 15px;
+}
+
+.signin-link a {
+  color: #6a82fb;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 4px;
+  transition: color 0.2s;
+}
+
+.signin-link a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  .signup-container {
+    width: 98vw;
+    padding: 20px 5px;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+</style>
+    </head>
+    <body>
+      <div class="signup-container">
+        <div class="del"><span class="FL">D</span><SPAn class="SL">E</SPAn><SPAN class="TL">L</SPAN><SPan class="HY">-</SPan><SPAN class="F0L">P</SPAN><SPan class="FTHL">A</SPan><SPAn class="SXL">Y</SPAn></div>
+        <form class="signup-form">
+          <h2>Create Account</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="matno">Matric Number</label>
+              <input type="text" id="matno" name="matno" required>
+            </div>
+            <div class="form-group">
+              <label for="dcode">Dcode</label>
+              <input type="text" id="dcode" name="dcode" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="faculty">Faculty</label>
+              <input type="text" id="faculty" name="faculty" required>
+            </div>
+            <div class="form-group">
+              <label for="department">Department</label>
+              <input type="text" id="department" name="department" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="photo" id="photo">Photo</label>
+              <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+            <div class="form-group">
+              <label for="signature" id="signature">Signature</label>
+              <input type="file" id="signature" name="signature" accept="image/*" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Create Password</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+          </div>
+          <button type="submit" class="signup-btn">Sign Up</button>
+          <p class="signin-link">Already have an account? <a href="sign-in-page.html">Login</a></p>
+        </form>
+      </div>
+        <script>
+document.getElementById("registerForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const name = document.getElementById("firstname").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  const res = await fetch("http://localhost:5000/api/auth/register", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, email, password })
+  });
+
+  const data = await res.json();
+  alert(data.message || "Registered!");
+});
+</script>
+    
+ 
+</body>
+</html>

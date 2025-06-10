@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign-in</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: radial-gradient(ellipse at bottom, #ffecd2 0%, #fcb69f 25%, #6a82fb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 40px 40px 30px 40px;
+  width: 350px;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.del{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+.FL{color: red;}.SL{color:orange;}.TL {color: yellow;}.HY{color: green;}.F0L{color: blue;}.FTHL{color: indigo;}.SXL{color: VIOLET;}
+
+
+.avatar {
+  background: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.avatar img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-group .icon {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+}
+
+.input-group input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 27px;
+  border: none;
+  border-radius: 4px;
+  background: #f1f1f1;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #232526;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.input-group input:focus {
+  background: #e0e0e0;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.forgot {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.forgot:hover {
+  color: #6a82fb;
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: #232526;
+  color: #eee;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #6a82fb;
+  color: #fff;
+}
+.signup-option {
+  margin-top: 22px;
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 15px;
+}
+
+.signup-link {
+  color: #6a82fb;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 6px;
+  transition: color 0.2s;
+}
+
+.signup-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div>
+        <div class="del"><span class="FL">D</span><SPAn class="SL">E</SPAn><SPAN class="TL">L</SPAN><SPan class="HY">-</SPan><SPAN class="F0L">P</SPAN><SPan class="FTHL">A</SPan><SPAn class="SXL">Y</SPAn></div>
+    </div>
+    <div class="avatar">
+      
+      <img src="img_avatar.png" alt="Avatar">
+    </div>
+    <form class="login-form">
+      <div class="input-group">
+        <span class="icon"><svg height="16" width="16" viewBox="0 0 24 24" fill="#444"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></span>
+        <input type="text" placeholder="Username">
+      </div>
+      <div class="input-group">
+        <span class="icon"><svg height="16" width="16" viewBox="0 0 24 24" fill="#444"><path d="M12 17a2 2 0 1 0 .001-3.999A2 2 0 0 0 12 17zm6-4V9a6 6 0 0 0-12 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2zm-8-4a4 4 0 1 1 8 0v4H6V9zm10 11H6v-5h12v5z"/></svg></span>
+        <input type="password" placeholder="Password">
+      </div>
+      <div class="form-actions">
+        <label class="remember-me">
+          <input type="checkbox"> Remember me
+        </label>
+        <a href="#" class="forgot">Forgot Password?</a>
+      </div>
+      <button type="submit" class="login-btn"><a href="../index.html">LOGIN</a></button>
+    </form>
+    <div class="signup-option">
+        <span>Don't have an account?</span>
+        <a href="signup.html" class="signup-link">Sign Up</a>
+      </div>
+  </div>
+</body>
+</html>
